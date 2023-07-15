@@ -1,0 +1,193 @@
+
+#table-product {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+#table-product th,
+#table-product td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+#table-product th {
+  background-color: #f5f5f5;
+}
+
+#table-product td img {
+  width: 75px;
+  height: 100px;
+}
+
+.button {
+  display: block;
+  padding: 12px 50px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button.edit {
+  color: #fff;
+  background-color: var(--primary);
+  margin:10px 0;
+}
+
+.button.delete {
+  color: var(--primary);
+  background-color: #fff;
+  border: 1px solid var(--primary);
+}
+
+.button:hover {
+transform: scale(1.1);
+}
+
+.empty {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+}
+.edit-product-form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   margin-top: 20px;
+   background-color: #f5f5f5;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.edit-product-form .image-container {
+   grid-column: 1 / 2;
+   grid-row: 1 / -1;
+   text-align:center;
+}
+
+.edit-product-form img {
+   width: 60%;
+   height: auto;
+   object-fit: cover;
+   border-radius: 4px;
+}
+
+.edit-product-form form {
+   grid-column: 2 / -1;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Rest of the CSS styles for input, select, and buttons remain the same */
+.add-products {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   margin-top: 20px;
+   background-color: #f5f5f5;
+   padding: 20px;
+   border-radius: 8px;
+}
+.add-products .form-input {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  
+  .add-products .form-input .box {
+    width: 100%;
+    background-color: var(--light-bg);
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    color: var(--black);
+    font-size: 1.8rem;
+    border: var(--border);
+  }
+
+.add-products .image-section {
+   grid-column: 1;
+   text-align:center;
+}
+
+.add-products .input-section {
+   grid-column: 2;
+}
+
+.add-products .image-preview {
+   position: relative;
+   width: 60%;
+   height: 100%;
+   margin:auto;
+   background-color: #ddd;
+   border-radius: 8px;
+   overflow: hidden;
+}
+.add-products .active {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 4px;
+}
+.add-products .image-label {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: orange;
+   color: white;
+   padding: 8px 16px;
+   border-radius: 4px;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.add-products #image-upload {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.add-products .box {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.add-products .btn {
+   padding: 10px 20px;
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.add-products .btn:hover {
+   background-color: #45a049;
+}
+
+.add-products .btn:active {
+   background-color: #3e8e41;
+}
+
+.add-products select {
+   width: 100%;
+}
